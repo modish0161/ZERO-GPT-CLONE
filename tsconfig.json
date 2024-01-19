@@ -15,21 +15,21 @@
     "moduleResolution": "node", // Use "node" instead of "bundler"
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react", // Set jsx to "react"
+    "jsx": "preserve", // Set jsx to "react"
     "incremental": true,
     "plugins": [
       {
-        "name": "typescript-plugin-css-modules",
+        "name": "typescript-plugin-css-modules"
       },
       {
-        "name": "next",
-      },
+        "name": "next"
+      }
     ],
     "paths": {
       "@/*": [
         "./src/*"
-      ],
-    },
+      ]
+    }
   },
   "include": [
     "next-env.d.ts",
@@ -39,5 +39,5 @@
   ],
   "exclude": [
     "node_modules"
-  ],
+  ]
 }

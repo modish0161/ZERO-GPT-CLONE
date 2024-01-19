@@ -1,11 +1,8 @@
-import React from 'react';
-import { useChat, useClient } from 'ai/react'; // Replace 'useClient' with the actual client-related import if available
-import GPTLogo from './components/GPTLogo';
-
+"use client";
+import { useChat } from "ai/react";
+import GPTLogo from "./components/GPTLogo";
 export default function Home() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
-  const client = useClient(); // Replace 'useClient' with the actual client-related hook if available
-
   return (
     <div className="pt-4 pb-32">
       {messages.map((message) => (
